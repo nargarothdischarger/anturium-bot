@@ -1,4 +1,6 @@
 import os
+import threading
+from http.server import HTTPServer, BaseHTTPRequestHandler
 import telebot
 from services import SERVICES, CATEGORIES
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
@@ -222,5 +224,18 @@ def menu_buttons(message):
         cart(message)
     elif message.text == "📝 Записаться":
         book_start(message)
+
+class HealthHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.end_headers()
+        self.wfile.write(b"OK")
+
+    def log_message(self, format, *args):
+        pass
+
+port = int(os.getenv("PORT", 10000))
+httpd = HTTPServer(("0.0.0.0", port), HealthHandler)
+threading.Thread(target=httpd.serve_forever, daemon=True).start()
 
 bot.polling(non_stop=True)
