@@ -1,0 +1,33 @@
+SERVICES = [
+    {"id": 1,  "title": "Приём терапевта", "price": 1500, "cat": "consult"},
+    {"id": 2,  "title": "Приём кардиолога", "price": 1800, "cat": "consult"},
+    {"id": 3,  "title": "Приём невролога", "price": 1700, "cat": "consult"},
+    {"id": 4,  "title": "Приём офтальмолога", "price": 1600, "cat": "consult"},
+    {"id": 5,  "title": "Приём оториноларинголога (ЛОР)", "price": 1600, "cat": "consult"},
+    {"id": 6,  "title": "Приём хирурга", "price": 1700, "cat": "consult"},
+    {"id": 7,  "title": "Приём уролога", "price": 1800, "cat": "consult"},
+    {"id": 8,  "title": "Приём гинеколога", "price": 1800, "cat": "consult"},
+    {"id": 9,  "title": "Приём эндокринолога", "price": 1700, "cat": "consult"},
+    {"id": 10, "title": "Приём гастроэнтеролога", "price": 1700, "cat": "consult"},
+    {"id": 11, "title": "Приём дерматолога", "price": 1600, "cat": "consult"},
+    {"id": 12, "title": "Приём травматолога", "price": 1700, "cat": "consult"},
+    {"id": 13, "title": "Приём ревматолога", "price": 1700, "cat": "consult"},
+    {"id": 14, "title": "Приём пульмонолога", "price": 1700, "cat": "consult"},
+    {"id": 15, "title": "Приём инфекциониста", "price": 1600, "cat": "consult"},
+    {"id": 16, "title": "УЗИ брюшной полости", "price": 2200, "cat": "diagnostics"},
+    {"id": 17, "title": "УЗИ почек", "price": 1800, "cat": "diagnostics"},
+    {"id": 18, "title": "Электрокардиография (ЭКГ)", "price": 1000, "cat": "diagnostics"},
+    {"id": 19, "title": "Эхокардиография (Эхо-КГ)", "price": 2500, "cat": "diagnostics"},
+    {"id": 20, "title": "Флюорография", "price": 800,  "cat": "diagnostics"},
+    {"id": 21, "title": "Массаж спины (1 сеанс)",        "price": 2000, "cat": "procedures"},
+    {"id": 22, "title": "Массаж шейно-воротниковой зоны","price": 1500, "cat": "procedures"},
+    {"id": 23, "title": "Анализ крови общий",            "price": 600,  "cat": "procedures"},
+    {"id": 24, "title": "Анализ крови биохимический",   "price": 1200, "cat": "procedures"},
+    {"id": 25, "title": "Вакцинация (по записи)",        "price": 0,    "cat": "procedures"},
+]
+
+CATEGORIES = {
+    "consult":     "Консультации врачей",
+    "diagnostics": "Диагностика",
+    "procedures":  "Процедуры и анализы",
+}
